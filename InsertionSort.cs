@@ -17,6 +17,23 @@ namespace SortingAlgorithms
             }
         }
 
+        public static void SortBetterTimeComplexity<T>(T[] array) where T : IComparable
+        {
+            T current;
+            int otherIndex;
+            for (int i = 1; i < array.Length; i++)
+            {
+                current = array[i];
+                otherIndex = i;
+                while (otherIndex > 0 && current.CompareTo(array[otherIndex - 1]) < 0)
+                {
+                    array[otherIndex] = array[otherIndex - 1];
+                    otherIndex--;
+                }
+                array[otherIndex] = current;
+            }
+        }
+
         private static void Swap<T>(T[] array, int first, int second)
         {
             T temp = array[first];
