@@ -10,13 +10,14 @@ namespace SortingAlgorithms
 
         private static void Main()
         {
-            SortFunction<int>[] sortFunctions = { SelectionSort.Sort, InsertionSort.Sort, InsertionSort.SortBetterTimeComplexity , BubbleSort.Sort, BubbleSort.SortBetterTimeComplexity };
+            SortFunction<int>[] sortFunctions = { SelectionSort.Sort, InsertionSort.Sort, InsertionSort.SortBetterTimeComplexity , BubbleSort.Sort, BubbleSort.SortBetterTimeComplexity, QuickSort.Sort };
+
             string[] namesOfFunctions = new string[sortFunctions.Length];
             for (int i = 0; i < namesOfFunctions.Length; i++)
             {
                 namesOfFunctions[i] = $"{sortFunctions[i].Method.DeclaringType.Name}.{sortFunctions[i].Method.Name}";
             }
-            int arrayLength = 30;
+            int arrayLength = 10;
             int[] integerValues = new int[arrayLength];
             Random random = new Random();
             Console.Write("Before sort: ".PadRight(namesOfFunctions.Select(f => f.Length).Max() + 2));
