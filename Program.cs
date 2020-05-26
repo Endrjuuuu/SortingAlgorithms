@@ -10,7 +10,7 @@ namespace SortingAlgorithms
 
         private static void Main()
         {
-            SortFunction<int>[] sortFunctions = { SelectionSort.Sort, InsertionSort.Sort, InsertionSort.SortBetterTimeComplexity , BubbleSort.Sort, BubbleSort.SortBetterTimeComplexity, QuickSort.Sort };
+            SortFunction<int>[] sortFunctions = { SelectionSort.Sort, InsertionSort.Sort, InsertionSort.SortBetterTimeComplexity , BubbleSort.Sort, BubbleSort.SortBetterTimeComplexity, QuickSort.Sort, MargeSort.Sort };
 
             string[] namesOfFunctions = new string[sortFunctions.Length];
             for (int i = 0; i < namesOfFunctions.Length; i++)

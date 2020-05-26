@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="BubbleSort.cs" />
     <Compile Include="InsertionSort.cs" />
+    <Compile Include="MargeSort.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QuickSort.cs" />
